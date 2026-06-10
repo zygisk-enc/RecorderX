@@ -1,0 +1,5 @@
+- Initial Release.
+- High-performance H.264/H.265 encoding.
+- Internal audio capture support.
+- Modern Glassmorphic UI.
+- Android 14 compatibility.

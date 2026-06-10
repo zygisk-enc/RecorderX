@@ -1,0 +1,10 @@
+RecorderX is a privacy-focused, high-performance screen recording application built for modern Android devices.
+
+Key Features:
+- Crystal Clear Quality: Record in your native resolution or choose from FHD, HD, and SD presets.
+- Extreme Performance: Support for up to 120 FPS recording for ultra-smooth gameplay captures.
+- Internal Audio: Capture game sounds and system audio directly without using the microphone (Android 10+).
+- Privacy First: The app has zero internet permissions. Your data never leaves your device.
+- Modern Codecs: Efficient recording using H.264 (AVC) and H.265 (HEVC) hardware acceleration.
+- Beautiful UI: A modern, dark-mode interface with glassmorphic elements.
+- Fast Access: Start and stop recording instantly using the Quick Settings tile.
