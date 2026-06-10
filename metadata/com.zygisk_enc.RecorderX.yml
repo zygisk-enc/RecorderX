@@ -8,11 +8,6 @@ WebSite: https://github.com/zygisk-enc/RecorderX
 SourceCode: https://github.com/zygisk-enc/RecorderX
 IssueTracker: https://github.com/zygisk-enc/RecorderX/issues
 
-Summary: High-performance screen recorder with internal audio support
-Description: |-
-  Modern, privacy-focused screen recorder built with Material 3.
-  Supports H.264/H.265, 120 FPS, and native internal audio capture.
-
 RepoType: git
 Repo: https://github.com/zygisk-enc/RecorderX.git
 
@@ -23,7 +18,7 @@ Builds:
     gradle:
       - yes
 
-AutoUpdateMode: Version v%v
+AutoUpdateMode: Version
 UpdateCheckMode: Tags
 CurrentVersion: '1.0'
 CurrentVersionCode: 1
