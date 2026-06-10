@@ -18,6 +18,9 @@ Builds:
     subdir: app
     gradle:
       - yes
+    prebuild:
+      - sed -i 's/9.4.1/8.7/' ../gradle/wrapper/gradle-wrapper.properties
+      - sed -i "s/version '9.2.1'/version '8.4.0'/" ../build.gradle
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
