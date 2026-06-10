@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app_res="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app_res:elevation="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:text="RecorderX"
+            android:gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:letterSpacing="0.05"
+            android:layout_marginTop="32dp"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app_res:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:clipToPadding="false"
+        android:paddingBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_glass_card"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:layout_marginBottom="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quality Setup"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="18sp"
+                    android:textColor="@color/neon_cyan"
+                    android:layout_marginBottom="20dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app_res:boxBackgroundColor="#1A000000"
+                    app_res:boxCornerRadiusTopStart="16dp"
+                    app_res:boxCornerRadiusTopEnd="16dp"
+                    app_res:boxCornerRadiusBottomStart="16dp"
+                    app_res:boxCornerRadiusBottomEnd="16dp"
+                    app_res:boxStrokeWidth="0dp"
+                    app_res:boxStrokeWidthFocused="0dp"
+                    android:hint="@string/video_codec_label">
+                    <AutoCompleteTextView
+                        android:id="@+id/codecSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textColor="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app_res:boxBackgroundColor="#1A000000"
+                    app_res:boxCornerRadiusTopStart="16dp"
+                    app_res:boxCornerRadiusTopEnd="16dp"
+                    app_res:boxCornerRadiusBottomStart="16dp"
+                    app_res:boxCornerRadiusBottomEnd="16dp"
+                    app_res:boxStrokeWidth="0dp"
+                    app_res:boxStrokeWidthFocused="0dp"
+                    android:hint="@string/resolution_label">
+                    <AutoCompleteTextView
+                        android:id="@+id/resolutionSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textColor="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app_res:boxBackgroundColor="#1A000000"
+                    app_res:boxCornerRadiusTopStart="16dp"
+                    app_res:boxCornerRadiusTopEnd="16dp"
+                    app_res:boxCornerRadiusBottomStart="16dp"
+                    app_res:boxCornerRadiusBottomEnd="16dp"
+                    app_res:boxStrokeWidth="0dp"
+                    app_res:boxStrokeWidthFocused="0dp"
+                    android:hint="@string/bitrate_label">
+                    <AutoCompleteTextView
+                        android:id="@+id/bitrateSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textColor="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app_res:boxBackgroundColor="#1A000000"
+                    app_res:boxCornerRadiusTopStart="16dp"
+                    app_res:boxCornerRadiusTopEnd="16dp"
+                    app_res:boxCornerRadiusBottomStart="16dp"
+                    app_res:boxCornerRadiusBottomEnd="16dp"
+                    app_res:boxStrokeWidth="0dp"
+                    app_res:boxStrokeWidthFocused="0dp"
+                    android:hint="@string/fps_label">
+                    <AutoCompleteTextView
+                        android:id="@+id/fpsSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textColor="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_glass_card"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:layout_marginBottom="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Audio Setup"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="18sp"
+                    android:textColor="@color/neon_pink"
+                    android:layout_marginBottom="20dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app_res:boxBackgroundColor="#1A000000"
+                    app_res:boxCornerRadiusTopStart="16dp"
+                    app_res:boxCornerRadiusTopEnd="16dp"
+                    app_res:boxCornerRadiusBottomStart="16dp"
+                    app_res:boxCornerRadiusBottomEnd="16dp"
+                    app_res:boxStrokeWidth="0dp"
+                    app_res:boxStrokeWidthFocused="0dp"
+                    android:hint="@string/audio_source_label">
+                    <AutoCompleteTextView
+                        android:id="@+id/audioSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textColor="@color/white" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_glass_card"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:layout_marginBottom="32dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info_text"
+                    android:textColor="#B3FFFFFF"
+                    android:textSize="14sp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:gravity="center"
+                    android:layout_marginBottom="16dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnViewSource"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_glass_card"
+                    android:text="@string/view_source"
+                    android:textColor="@color/neon_cyan"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingStart="24dp"
+                    android:paddingEnd="24dp"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="24dp"
+        android:clipToPadding="false"
+        android:clipChildren="false">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRecord"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@drawable/bg_record_btn"
+            android:text="@string/start_recording"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-black"
+            android:textAllCaps="false"
+            android:letterSpacing="0.05"
+            android:elevation="12dp"
+            android:translationZ="12dp"
+            android:stateListAnimator="@null" />
+
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
