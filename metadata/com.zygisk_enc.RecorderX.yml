@@ -7,6 +7,7 @@ SourceCode: https://github.com/zygisk-enc/RecorderX
 IssueTracker: https://github.com/zygisk-enc/RecorderX/issues
 
 AutoName: RecorderX
+
 RepoType: git
 Repo: https://github.com/zygisk-enc/RecorderX.git
 
