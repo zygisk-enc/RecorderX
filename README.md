@@ -11,7 +11,7 @@
 
 ---
 
-RecorderX is a specialized, privacy-focused tool designed for high-fidelity screen capture. It is optimized for devices with high-refresh-rate displays and AMOLED screens, providing near-lossless output with minimal system overhead.
+RecorderX is a specialized, privacy-focused app designed for high-fidelity screen capture. It is optimized for devices with high-refresh-rate displays , providing near-lossless output with minimal system overhead.
 
 ## Versions
 
